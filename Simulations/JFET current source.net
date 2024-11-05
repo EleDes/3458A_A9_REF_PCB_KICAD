@@ -1,0 +1,24 @@
+* D:\Dokumente\Projekte\Spannungsreferenz\3458A Ref A9 Clone - MiDi\Simulations\JFET current source.asc
+J1 N001 N002 N003 4392
+V1 N001 0 {V1}
+R1 N003 N002 470
+V2 N002 0 6.6
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\MiDi\AppData\Local\LTspice\lib\cmp\standard.jft
+;.tran 1
+.param vto=-2.808 V1=18
+;.step param vto -1.417 -5.27 0.2
+;.step param vto -4 -10 2                  ;4391 Vgsoff 4..10V
+.step param vto -2 -5 1                    ;4392 Vgsoff 2..5V
+;.step param vto -0.5 -3 0.5             ;4393 Vgsoff 0.5..3V
+;.step param vto list -1.417 -2.808 -5.27
+;.step dec param V1
+.dc V1 list 17.5 18.5 25
+;.step param V1 list 17.5 18.5 25
+;.op
+.model 4391 NJF(Beta=3.084m Betatce=-0.5 Vto={vto} Vtotc=-2.5m Lambda=17.5m Is=205.2f Xti=3 Isr=1988f Nr=2 Alpha=20.98u N=1 Rd=1 Rs=1 Cgd=5.35p Cgs=4.76p Fc=0.5 Vk=123.7 M=407m Pb=1 Kf=40230f Af=1 Mfg=Linear_Systems)
+.model 4392 NJF(Beta=5.816m Betatce=-0.5 Vto={vto} Vtotc=-2.5m Lambda=12m Is=205.2f Xti=3 Isr=1988f Nr=2 Alpha=20.98u N=1 Rd=1 Rs=1 Cgd=4.83p Cgs=4.29p Fc=0.5 Vk=123.7 M=407m Pb=1 Kf=77640f Af=1 Mfg=Linear_Systems)
+.model 4393 NJF(Beta=9.109m Betatce=-0.5 Vto={vto} Vtotc=-2.5m Lambda=8m Is=205.2f Xti=3 Isr=1988f Nr=2 Alpha=20.98u N=1 Rd=1 Rs=1 Cgd=4.57p Cgs=4.06p Fc=0.5 Vk=123.7 M=407m Pb=1 Kf=12300f Af=1 Mfg=Linear_Systems)
+.backanno
+.end

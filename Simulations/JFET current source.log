@@ -1,0 +1,23 @@
+LTspice 24.0.11 for Windows
+Circuit: * D:\Dokumente\Projekte\Spannungsreferenz\3458A Ref A9 Clone - MiDi\Simulations\JFET current source.asc
+Start Time: Mon Nov  4 18:09:25 2024
+solver = Normal
+Maximum thread count: 12
+
+
+
+.step vto=-5
+
+
+
+.step vto=-4
+
+
+
+.step vto=-3
+tnom = 27
+temp = 27
+method = modified trap
+.step vto=-2
+Total elapsed time: 0.400 seconds.
+
