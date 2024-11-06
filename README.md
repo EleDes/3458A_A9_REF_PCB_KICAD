@@ -4,7 +4,7 @@ Not verified, not build
 
 [3458A Ref A9 Schematics](Fabrication/3458A%20Ref%20A9%20Clone.pdf?raw=true "3458A Ref A9 Schematics")
 
-[3458A Ref A9 BOM](Fabrication/ibom.html?raw=true "3458A Ref A9 BOM")
+[3458A Ref A9 BOM](https://htmlpreview.github.io/?https://github.com/EleDes/3458A_A9_REF_PCB_KICAD/blob/main/Fabrication/ibom.html "3458A Ref A9 BOM")
 
 ![3458A Ref A9 3D angled top models + cap](Pictures/3458A%20Ref%20A9%20Clone%203D%20angled%20top%20models%20+%20cap.png?raw=true "3458A Ref A9 3D angled top models + cap")
 
