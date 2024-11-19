@@ -17,10 +17,10 @@ Not verified, not build
 
 ![3458A Ref A9 3D bot](Pictures/3458A%20Ref%20A9%20Clone%203D%20bot%20naked.png?raw=true "3458A Ref A9 3D bot")
 
-<img src="Pictures/SVG/3458A Ref A9 Clone-B_Cu.svg">
+<img src="Pictures/SVG/3458A Ref A9 Clone-B_Cu.svg" width="1000">
 
-<img src="Pictures/SVG/3458A Ref A9 Clone-F_Cu.svg">
+<img src="Pictures/SVG/3458A Ref A9 Clone-F_Cu.svg" width="1000">
 
-<img src="Pictures/SVG/3458A Ref A9 Clone-In1_Cu.svg">
+<img src="Pictures/SVG/3458A Ref A9 Clone-In1_Cu.svg" width="1000">
 
-<img src="Pictures/SVG/3458A Ref A9 Clone-In2_Cu.svg">
+<img src="Pictures/SVG/3458A Ref A9 Clone-In2_Cu.svg" width="1000">
