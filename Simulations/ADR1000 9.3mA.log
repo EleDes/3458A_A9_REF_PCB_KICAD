@@ -1,0 +1,33 @@
+LTspice 24.0.12 for Windows
+Circuit: * D:\Dokumente\Projekte\Spannungsreferenz\3458A Ref A9 Clone - MiDi\Simulations\ADR1000 9.3mA.asc
+Start Time: Tue Nov 19 18:11:12 2024
+solver = Normal
+Maximum thread count: 32
+
+
+
+Direct Newton iteration for .op point succeeded.
+.step r4=8000 r2=5700
+
+
+
+.step r4=8008 r2=5700
+
+
+
+.step r4=8000 r2=62000
+tnom = 27
+temp = 27
+method = modified trap
+.step r4=8008 r2=62000
+
+
+Measurement: out
+  step	v(ref)
+     1	6.715782954
+     2	6.715784194
+     3	6.643042367
+     4	6.64299411
+
+Total elapsed time: 2.025 seconds.
+
