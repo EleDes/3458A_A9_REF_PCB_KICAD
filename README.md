@@ -1,6 +1,6 @@
 # 3458A A9 Reference board in KiCad
 
-Not verified, not build
+REV β - not verified, not build
 
 [3458A Ref A9 Schematics](Fabrication/3458A%20Ref%20A9%20Clone.pdf?raw=true "3458A Ref A9 Schematics")
 ![3458A Ref A9 Schematics](Fabrication/3458A%20Ref%20A9%20Clone.png "3458A Ref A9 Schematics")
