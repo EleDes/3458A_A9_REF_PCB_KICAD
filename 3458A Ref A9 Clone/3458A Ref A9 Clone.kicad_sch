@@ -1602,198 +1602,6 @@
 				)
 			)
 		)
-		(symbol "Jumper:SolderJumper_2_Bridged"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim yes)
-			(in_bom no)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Bridged*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_0_1"
-				(rectangle
-					(start -0.508 0.508)
-					(end 0.508 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 1.016)
-					(mid -1.2656 0)
-					(end -0.254 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 -1.016)
-					(mid 1.2656 0)
-					(end 0.254 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Bridged_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "LTZ1000A_1"
 			(pin_names
 				(offset 0)
@@ -6602,18 +6410,6 @@
 		(uuid "3b5e814f-3c87-4c8a-a3a1-85a21d421192")
 	)
 	(junction
-		(at 212.09 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c4dd8bc-b139-47bc-a103-dcdde7f28071")
-	)
-	(junction
-		(at 212.09 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "42dc5476-e12b-4d45-af55-5c5b676fbdae")
-	)
-	(junction
 		(at 236.22 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6630,6 +6426,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "553765fa-0137-459a-83e4-fd45090230b2")
+	)
+	(junction
+		(at 186.69 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57d32cb0-5363-419f-80ab-7d67c67eeada")
 	)
 	(junction
 		(at 186.69 104.14)
@@ -6650,16 +6452,16 @@
 		(uuid "6c40cf92-7a9c-4b01-aff2-f1b7950aaa2d")
 	)
 	(junction
-		(at 185.42 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6dbfdd5e-7be7-423c-a7b4-f020c9ff00eb")
-	)
-	(junction
 		(at 267.97 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f7ef9c8-0c36-4383-b21f-dbe4f806b658")
+	)
+	(junction
+		(at 212.09 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76ef4a91-7b54-44b6-b967-b242d3ebb624")
 	)
 	(junction
 		(at 144.78 72.39)
@@ -6722,7 +6524,7 @@
 		(uuid "9dc90c74-0f2a-4312-a7c3-ff1bdf7819c7")
 	)
 	(junction
-		(at 228.6 69.85)
+		(at 219.71 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a097029e-c4bf-4087-b42f-483674b1a827")
@@ -6738,12 +6540,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8d69cce-e965-447f-93a0-7eb2bdc308e2")
-	)
-	(junction
-		(at 212.09 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b05a15a3-382c-4dc0-80c9-b665529c4d4e")
 	)
 	(junction
 		(at 224.79 119.38)
@@ -6971,7 +6767,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 69.85) (xy 237.49 69.85)
+			(xy 219.71 69.85) (xy 237.49 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6991,7 +6787,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 69.85) (xy 215.9 69.85)
+			(xy 219.71 69.85) (xy 215.9 69.85)
 		)
 		(stroke
 			(width 0)
@@ -7341,16 +7137,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 78.74) (xy 212.09 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "413ed095-9779-4d3e-a911-1c81b7a9ad97")
-	)
-	(wire
-		(pts
 			(xy 226.06 129.54) (xy 226.06 130.81)
 		)
 		(stroke
@@ -7501,6 +7287,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 87.63) (xy 212.09 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52020889-3320-41ca-acae-382f995d7148")
+	)
+	(wire
+		(pts
 			(xy 39.37 146.05) (xy 36.83 146.05)
 		)
 		(stroke
@@ -7561,7 +7357,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 78.74) (xy 212.09 80.01)
+			(xy 213.36 86.36) (xy 212.09 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7771,7 +7567,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 78.74) (xy 214.63 78.74)
+			(xy 213.36 86.36) (xy 214.63 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7791,7 +7587,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 69.85) (xy 228.6 71.12)
+			(xy 219.71 69.85) (xy 219.71 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7881,7 +7677,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 87.63) (xy 212.09 88.9)
+			(xy 212.09 59.69) (xy 212.09 87.63)
 		)
 		(stroke
 			(width 0)
@@ -7921,23 +7717,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 69.85) (xy 185.42 71.12)
+			(xy 186.69 69.85) (xy 186.69 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9a1dacef-d0ce-4af5-a01f-bcea4c0ae830")
-	)
-	(wire
-		(pts
-			(xy 212.09 59.69) (xy 212.09 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c7690fa-3335-4d09-89d2-adb6f47ddcfa")
 	)
 	(wire
 		(pts
@@ -8091,16 +7877,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 78.74) (xy 208.28 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b48a1881-c6e6-4ded-b498-2530e42aaf27")
-	)
-	(wire
-		(pts
 			(xy 172.72 74.93) (xy 175.26 74.93)
 		)
 		(stroke
@@ -8161,7 +7937,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 76.2) (xy 228.6 78.74)
+			(xy 219.71 76.2) (xy 219.71 78.74)
 		)
 		(stroke
 			(width 0)
@@ -8331,7 +8107,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 69.85) (xy 185.42 69.85)
+			(xy 184.15 69.85) (xy 186.69 69.85)
 		)
 		(stroke
 			(width 0)
@@ -8381,16 +8157,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 69.85) (xy 200.66 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df97d567-2b41-4c23-8d13-e97bbb6b6ef7")
-	)
-	(wire
-		(pts
 			(xy 203.2 118.11) (xy 203.2 129.54)
 		)
 		(stroke
@@ -8408,16 +8174,6 @@
 			(type default)
 		)
 		(uuid "e050a6da-0cf3-4045-b224-b3d7409abe16")
-	)
-	(wire
-		(pts
-			(xy 208.28 87.63) (xy 208.28 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4167624-5f69-4b6d-bc94-79da810ff17d")
 	)
 	(wire
 		(pts
@@ -8461,13 +8217,13 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 88.9) (xy 212.09 88.9)
+			(xy 186.69 69.85) (xy 200.66 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec9b6fbd-d5ad-459f-999a-bf337af190ab")
+		(uuid "ec6156c1-1504-425d-bbd7-8fec41bec13c")
 	)
 	(wire
 		(pts
@@ -8571,26 +8327,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 88.9) (xy 212.09 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f423ab8f-e30e-49c6-874b-7d8e046a081e")
-	)
-	(wire
-		(pts
-			(xy 212.09 78.74) (xy 212.09 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5e6ebb1-6a83-43f1-a819-84152ef55b5a")
-	)
-	(wire
-		(pts
 			(xy 267.97 62.23) (xy 275.59 62.23)
 		)
 		(stroke
@@ -8621,7 +8357,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 76.2) (xy 185.42 77.47)
+			(xy 186.69 76.2) (xy 186.69 77.47)
 		)
 		(stroke
 			(width 0)
@@ -8650,7 +8386,7 @@
 		(uuid "fff0277e-9908-4358-983e-eada13961264")
 	)
 	(image
-		(at 148.59 273.05)
+		(at 148.59 277.114)
 		(scale 1.96742)
 		(uuid "7422269b-d451-40c3-94e5-bf9fc04bdfae")
 		(data "iVBORw0KGgoAAAANSUhEUgAABoAAAANWCAIAAABRZtlwAAAgAElEQVR4nOzdd3hcV5k/8FvmTh+1"
@@ -15556,10 +15292,10 @@
 			"CoVCoVAoFAqFQqFQKBQKZRv5/wL2sk2hVYzvAAAAAElFTkSuQmCC"
 		)
 	)
-	(text_box "12 : 1 = 4R : 1/3R\n1/3R = 666.7Ω\nADR1000: 59°C"
+	(text_box "12 : 1 = 4R : 1/3R\nR = 2kΩ\n8kΩ : 666.7Ω\nADR1000 oven SP: 59°C"
 		(exclude_from_sim no)
-		(at 166.37 94.234 0)
-		(size 17.78 6.096)
+		(at 165.1 93.98 0)
+		(size 20.32 7.62)
 		(stroke
 			(width 0)
 			(type default)
@@ -15596,7 +15332,7 @@
 	)
 	(text_box "JFET constant current source:\n4392 & 470R: 3-8mA\nOptional:\ntweak R421 for Iz - 1mA"
 		(exclude_from_sim no)
-		(at 168.402 47.752 0)
+		(at 168.402 46.99 0)
 		(size 24.892 7.62)
 		(stroke
 			(width 0)
@@ -15613,9 +15349,9 @@
 		)
 		(uuid "c21ad653-16b5-48e0-9721-7ee997d54e8a")
 	)
-	(text_box "R415 = R2(DS): Ultra precision BMF\nR2: fine trim (10% max)\nTweak for near (unheated) zero TC\nof ADR1000 for set oven temp"
+	(text_box "R415 = R2(DS): Ultra precision BMF\nR2: fine trim (10% max)\nTweak for low (unheated) TC\nof ADR1000 for set oven temp"
 		(exclude_from_sim no)
-		(at 212.09 43.18 0)
+		(at 212.09 46.99 0)
 		(size 30.226 7.62)
 		(stroke
 			(width 0)
@@ -15643,18 +15379,6 @@
 		)
 		(uuid "5b0106fa-bcdc-4d98-a5e5-8e8bb4600321")
 	)
-	(text "Option for LTZ1000 non A"
-		(exclude_from_sim no)
-		(at 133.604 83.566 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-				(thickness 0.2032)
-				(bold yes)
-			)
-		)
-		(uuid "8dd8cea0-d347-4040-9699-efdd50cb266f")
-	)
 	(text "NOMCT16032001"
 		(exclude_from_sim no)
 		(at 157.48 139.7 0)
@@ -15675,19 +15399,6 @@
 			(justify left)
 		)
 		(uuid "a1d4ef0f-4655-4ee3-b8cd-e41128b9322a")
-	)
-	(text "Option for LTZ1000(A)\n(open JP1)"
-		(exclude_from_sim no)
-		(at 217.424 86.36 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-				(thickness 0.2032)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "d92107ba-184f-4519-8c5b-3488fab77569")
 	)
 	(text "GND-current\ncompensation\n680µA Iq U402"
 		(exclude_from_sim no)
@@ -16061,7 +15772,7 @@
 	)
 	(global_label "+7V REF"
 		(shape output)
-		(at 214.63 78.74 0)
+		(at 214.63 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16070,7 +15781,7 @@
 		)
 		(uuid "870cb7c3-5291-4238-bea6-016078fab24f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 214.63 78.74 0)
+			(at 214.63 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16647,7 +16358,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 228.6 73.66 0)
+		(at 219.71 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16655,7 +16366,7 @@
 		(dnp no)
 		(uuid "02bf3628-7fe2-4e63-86c1-927b26a07a90")
 		(property "Reference" "C411"
-			(at 231.14 72.39 0)
+			(at 222.25 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16664,7 +16375,7 @@
 			)
 		)
 		(property "Value" "22n"
-			(at 231.14 74.93 0)
+			(at 222.25 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16673,7 +16384,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 228.6 73.66 0)
+			(at 219.71 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16682,7 +16393,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 73.66 0)
+			(at 219.71 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16691,7 +16402,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 228.6 73.66 0)
+			(at 219.71 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16700,7 +16411,7 @@
 			)
 		)
 		(property "Type" "C0G"
-			(at 227.203 72.39 0)
+			(at 218.313 72.39 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16717,84 +16428,6 @@
 			(project "3458A Ref A9 Clone"
 				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
 					(reference "C411")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 212.09 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp yes)
-		(uuid "044864e5-48b2-4143-a47c-4747afb4051c")
-		(property "Reference" "R3"
-			(at 213.36 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "20R"
-			(at 213.36 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
-			(at 210.312 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://foilresistors.com/docs/63070/vsmserie.pdf"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "2ppm/°C, 20ppm/a LTD - VSM, SMR1DZ or VFCP"
-			(at 212.09 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1a1f53cb-2015-41e5-acea-8302f1248169")
-		)
-		(pin "2"
-			(uuid "c7ac0f33-bafa-4d38-8d01-a5c3eefe38ac")
-		)
-		(instances
-			(project "3458A Ref A9 Clone"
-				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -17142,7 +16775,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 185.42 77.47 0)
+		(at 186.69 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17150,7 +16783,7 @@
 		(dnp no)
 		(uuid "107356f9-a3fa-446c-b1f5-b0429c4ced0b")
 		(property "Reference" "#PWR06"
-			(at 185.42 83.82 0)
+			(at 186.69 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17159,7 +16792,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 185.42 81.28 0)
+			(at 186.69 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17167,7 +16800,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 77.47 0)
+			(at 186.69 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17176,7 +16809,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 77.47 0)
+			(at 186.69 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17185,7 +16818,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 185.42 77.47 0)
+			(at 186.69 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17985,7 +17618,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 185.42 73.66 0)
+		(at 186.69 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17993,7 +17626,7 @@
 		(dnp no)
 		(uuid "2f7888e9-0025-43bd-9c52-ec4969cfbd11")
 		(property "Reference" "C414"
-			(at 187.96 72.39 0)
+			(at 189.23 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18002,7 +17635,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 187.96 74.93 0)
+			(at 189.23 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18011,7 +17644,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 185.42 73.66 0)
+			(at 186.69 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18020,7 +17653,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 73.66 0)
+			(at 186.69 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18029,7 +17662,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 185.42 73.66 0)
+			(at 186.69 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18038,7 +17671,7 @@
 			)
 		)
 		(property "Type" "C0G"
-			(at 184.15 72.39 0)
+			(at 185.42 72.39 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18884,7 +18517,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDA")
-		(at 228.6 78.74 0)
+		(at 219.71 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18892,7 +18525,7 @@
 		(dnp no)
 		(uuid "5f59f373-74f0-44db-baae-d8ca79b2689a")
 		(property "Reference" "#PWR05"
-			(at 228.6 85.09 0)
+			(at 219.71 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18901,7 +18534,7 @@
 			)
 		)
 		(property "Value" "GNDA"
-			(at 228.6 82.55 0)
+			(at 219.71 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18909,7 +18542,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 78.74 0)
+			(at 219.71 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18918,7 +18551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 78.74 0)
+			(at 219.71 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18927,7 +18560,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
-			(at 228.6 78.74 0)
+			(at 219.71 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20312,7 +19945,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b0ea2b47-1feb-4657-b622-b76902420630")
 		(property "Reference" "C1"
 			(at 162.56 76.2 90)
@@ -20735,76 +20368,6 @@
 			(project "3458A Ref A9 Clone"
 				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 208.28 83.82 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "bd3ea0ca-19e8-439b-8006-ec93b1d75906")
-		(property "Reference" "JP1"
-			(at 205.74 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Jumper"
-			(at 205.74 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm"
-			(at 208.28 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 208.28 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1aa5f7a4-16c8-4451-b7a4-87a2cf787232")
-		)
-		(pin "1"
-			(uuid "4a9e27af-c5d3-4b4b-935e-49d078f78274")
-		)
-		(instances
-			(project ""
-				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
-					(reference "JP1")
 					(unit 1)
 				)
 			)
