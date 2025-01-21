@@ -32,6 +32,9 @@ REV B - build & verified
 
 
 These 3D models are excluded from project license (folder 3D):
+
 022172052: Molex KK 254 from [https://www.molex.com/en-us/products/part-detail/22172052](https://www.molex.com/en-us/products/part-detail/22172052) - copyright: Molex 
+
 A9_CAP_BOT, A9_CAP_TOP: from [https://xdevs.com/fix/hp3458a/#a9pcba branadic](https://xdevs.com/fix/hp3458a/#a9pcba) - copyright: [https://xdevs.com/fix/hp3458a/#legal](https://xdevs.com/fix/hp3458a/#legal)
+
 TO-5-8pins: from [https://grabcad.com/library/to-5-8-pin-ltz1000-1](https://grabcad.com/library/to-5-8-pin-ltz1000-1) - terms of use: [https://blog.grabcad.com/terms-of-use/](https://blog.grabcad.com/terms-of-use/)
