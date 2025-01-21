@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "257564a5-d2fe-4352-980a-a9579ebbc162")
 	(paper "A4")
+	(title_block
+		(title "3458A A9 Reference ADR1000")
+		(date "2025-01-21")
+		(rev "B")
+		(company "Michael D.")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -472,25 +478,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
+			(property "Reference" "U402"
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Opamp_Dual"
-				(at 0 -5.08 0)
+			(property "Value" "LT1013"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 0 0 0)
 				(effects
 					(font
@@ -499,7 +503,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LT1013-LT1014.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -592,6 +596,24 @@
 						(type background)
 					)
 				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin output line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -602,7 +624,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -620,25 +642,7 @@
 							)
 						)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -670,7 +674,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -688,7 +692,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -706,7 +710,7 @@
 							)
 						)
 					)
-					(number "7"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -726,7 +730,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -744,7 +748,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3234,6 +3238,574 @@
 						(effects
 							(font
 								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Opamp_Dual_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U402"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT1013"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LT1013-LT1014.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual operational amplifier"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_opamp_dual"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Opamp_Dual_1_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_1_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_1_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Opamp_Dual_2"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U402"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT1013"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LT1013-LT1014.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual operational amplifier"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Name" "kicad_builtin_opamp_dual"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SUBCKT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SSOP*2.95x2.8mm*P0.65mm* TSSOP*3x3mm*P0.65mm* VSSOP*P0.5mm* TO?99*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Opamp_Dual_2_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_2_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Opamp_Dual_2_3_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -6386,6 +6958,12 @@
 		(uuid "1856cdb5-378f-4c9e-ade4-299e4b446de3")
 	)
 	(junction
+		(at 205.74 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1dc3116c-3f39-4062-8fb7-8fff3d59481a")
+	)
+	(junction
 		(at 167.64 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6410,6 +6988,18 @@
 		(uuid "3b5e814f-3c87-4c8a-a3a1-85a21d421192")
 	)
 	(junction
+		(at 205.74 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3cf9dc0c-71eb-4989-81aa-dd76a8c02f30")
+	)
+	(junction
+		(at 215.9 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41bd20c6-6744-4466-8508-e346c9adb6d6")
+	)
+	(junction
 		(at 236.22 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6432,6 +7022,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57d32cb0-5363-419f-80ab-7d67c67eeada")
+	)
+	(junction
+		(at 215.9 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d2ba7e0-0bca-43b4-98ec-ae10156ca5a4")
 	)
 	(junction
 		(at 186.69 104.14)
@@ -6482,12 +7078,6 @@
 		(uuid "8b2856c1-4c2b-4832-863a-017701e5bfc6")
 	)
 	(junction
-		(at 205.74 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d8a1cfe-5e38-49ee-be6e-6eb53a99a733")
-	)
-	(junction
 		(at 172.72 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6498,12 +7088,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9122cde4-4473-4318-9e44-a53206cb686f")
-	)
-	(junction
-		(at 215.9 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94625451-cb18-4ba4-be3a-d5fa727e7ff2")
 	)
 	(junction
 		(at 167.64 120.65)
@@ -6548,12 +7132,6 @@
 		(uuid "b0e6ce0e-f892-4d62-83ea-d184adb33f46")
 	)
 	(junction
-		(at 215.9 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b743b035-5a6b-4832-be95-f6a10a5f66b5")
-	)
-	(junction
 		(at 212.09 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6576,12 +7154,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ca984ce3-f8b9-49a9-8e6d-97fd7628e33d")
-	)
-	(junction
-		(at 205.74 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d236e37c-d227-456c-8139-e6eb33bb68d5")
 	)
 	(junction
 		(at 203.2 118.11)
@@ -6727,6 +7299,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 59.69) (xy 209.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f5ad5ba-76af-4c73-a76c-a621138a8a8e")
+	)
+	(wire
+		(pts
 			(xy 219.71 88.9) (xy 219.71 90.17)
 		)
 		(stroke
@@ -6757,6 +7339,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 59.69) (xy 209.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11afab45-18cb-47ef-bc3e-0476a62e2b6e")
+	)
+	(wire
+		(pts
 			(xy 226.06 138.43) (xy 226.06 139.7)
 		)
 		(stroke
@@ -6764,16 +7356,6 @@
 			(type default)
 		)
 		(uuid "122ebb88-f515-4869-9d98-672526d957c6")
-	)
-	(wire
-		(pts
-			(xy 219.71 69.85) (xy 237.49 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14d7f1b4-5897-4752-a9db-27bea1072674")
 	)
 	(wire
 		(pts
@@ -6787,26 +7369,6 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 69.85) (xy 215.9 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16be6f79-98ca-454d-bb89-204be3f812c3")
-	)
-	(wire
-		(pts
-			(xy 205.74 59.69) (xy 209.55 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1730537c-aed1-467b-93f7-738c20d78834")
-	)
-	(wire
-		(pts
 			(xy 236.22 74.93) (xy 236.22 83.82)
 		)
 		(stroke
@@ -6814,16 +7376,6 @@
 			(type default)
 		)
 		(uuid "19dce365-b2f9-4ffd-88f2-55ae5a9388a3")
-	)
-	(wire
-		(pts
-			(xy 205.74 69.85) (xy 215.9 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a297608-1468-42f7-8938-f027176c2270")
 	)
 	(wire
 		(pts
@@ -7257,16 +7809,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 59.69) (xy 215.9 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e138a82-6785-4f65-9213-eeacad68e3f2")
-	)
-	(wire
-		(pts
 			(xy 167.64 118.11) (xy 167.64 120.65)
 		)
 		(stroke
@@ -7327,6 +7869,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 59.69) (xy 215.9 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d92962-dc9d-4614-b0dc-1ea9029de78c")
+	)
+	(wire
+		(pts
 			(xy 121.92 66.04) (xy 121.92 67.31)
 		)
 		(stroke
@@ -7334,6 +7886,16 @@
 			(type default)
 		)
 		(uuid "57c02978-5f5c-4d29-b320-aa5e8b3c5b28")
+	)
+	(wire
+		(pts
+			(xy 205.74 69.85) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "589d7652-f6cf-42cf-b649-3b45c58130b4")
 	)
 	(wire
 		(pts
@@ -7374,6 +7936,16 @@
 			(type default)
 		)
 		(uuid "5ffefda2-a3d3-477c-bfb6-79396fe7c91f")
+	)
+	(wire
+		(pts
+			(xy 209.55 58.42) (xy 209.55 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611cd131-60d9-4c6b-9592-36436307eae3")
 	)
 	(wire
 		(pts
@@ -7424,6 +7996,16 @@
 			(type default)
 		)
 		(uuid "6a07119b-1801-4912-839f-8aaacc85140e")
+	)
+	(wire
+		(pts
+			(xy 215.9 59.69) (xy 231.14 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b4964f9-1aca-4b88-b7ff-52f030e94a61")
 	)
 	(wire
 		(pts
@@ -7527,6 +8109,16 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 68.58) (xy 215.9 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "762a8776-add1-4dfe-b96f-dcf131fa1df1")
+	)
+	(wire
+		(pts
 			(xy 200.66 58.42) (xy 200.66 59.69)
 		)
 		(stroke
@@ -7564,6 +8156,16 @@
 			(type default)
 		)
 		(uuid "7a0c32e5-e9f5-4ef6-b52d-e2c75d5364c1")
+	)
+	(wire
+		(pts
+			(xy 215.9 69.85) (xy 219.71 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a772008-2e68-41d4-b702-724af28598eb")
 	)
 	(wire
 		(pts
@@ -7747,16 +8349,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 59.69) (xy 231.14 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2582c03-561b-4916-a7be-57b1588b5ae8")
-	)
-	(wire
-		(pts
 			(xy 267.97 62.23) (xy 267.97 63.5)
 		)
 		(stroke
@@ -7834,16 +8426,6 @@
 			(type default)
 		)
 		(uuid "af5cfc6f-288e-4292-89da-0b1e0f5cdc6a")
-	)
-	(wire
-		(pts
-			(xy 209.55 59.69) (xy 212.09 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0328d42-495c-4c15-aa7d-7d26163dfda8")
 	)
 	(wire
 		(pts
@@ -7945,6 +8527,16 @@
 		)
 		(uuid "bd5089d5-a4d0-4f5c-b78b-9d6097416f10")
 	)
+	(polyline
+		(pts
+			(xy 217.678 127) (xy 214.503 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd80983b-b3cb-495a-a7d4-79eb505fdf4a")
+	)
 	(wire
 		(pts
 			(xy 186.69 104.14) (xy 186.69 86.36)
@@ -7954,6 +8546,16 @@
 			(type default)
 		)
 		(uuid "be221bf6-ad8f-4092-ab7f-90d037babd8c")
+	)
+	(wire
+		(pts
+			(xy 219.71 69.85) (xy 226.06 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf32cccc-19a4-4fe3-a76b-6cc2658b08b9")
 	)
 	(wire
 		(pts
@@ -8287,16 +8889,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 68.58) (xy 215.9 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f31742d7-4b3d-4fc1-b56c-222e536d8999")
-	)
-	(wire
-		(pts
 			(xy 201.93 119.38) (xy 203.2 118.11)
 		)
 		(stroke
@@ -8367,13 +8959,33 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 43.18) (xy 209.55 59.69)
+			(xy 209.55 43.18) (xy 209.55 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fbc8a648-23f4-4507-8b7c-cea9834cc29e")
+	)
+	(wire
+		(pts
+			(xy 233.68 69.85) (xy 237.49 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd55ad5f-3b5f-431b-8fa2-ff816a2693b8")
+	)
+	(polyline
+		(pts
+			(xy 217.678 127) (xy 209.804 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe58793f-5b05-4983-8d22-5945b56ac344")
 	)
 	(wire
 		(pts
@@ -8386,7 +8998,7 @@
 		(uuid "fff0277e-9908-4358-983e-eada13961264")
 	)
 	(image
-		(at 148.59 277.114)
+		(at 148.59 273.05)
 		(scale 1.96742)
 		(uuid "7422269b-d451-40c3-94e5-bf9fc04bdfae")
 		(data "iVBORw0KGgoAAAANSUhEUgAABoAAAANWCAIAAABRZtlwAAAgAElEQVR4nOzdd3hcV5k/8FvmTh+1"
@@ -15292,10 +15904,10 @@
 			"CoVCoVAoFAqFQqFQKBQKZRv5/wL2sk2hVYzvAAAAAElFTkSuQmCC"
 		)
 	)
-	(text_box "12 : 1 = 4R : 1/3R\nR = 2kΩ\n8kΩ : 666.7Ω\nADR1000 oven SP: 59°C"
+	(text_box "ADR1000 oven SP 59°C:\n12:1 = 4R : 1/3R\nR=2kΩ -> 8kΩ : 666.7Ω\n"
 		(exclude_from_sim no)
-		(at 165.1 93.98 0)
-		(size 20.32 7.62)
+		(at 164.592 93.98 0)
+		(size 21.336 6.35)
 		(stroke
 			(width 0)
 			(type default)
@@ -15311,9 +15923,47 @@
 		)
 		(uuid "1ce3c10d-5b29-438d-8ea3-7f04fef32e00")
 	)
+	(text_box "R417 trim positive TC\nADR1000 usually has negative TC"
+		(exclude_from_sim no)
+		(at 123.19 81.788 0)
+		(size 27.686 4.064)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "431841f5-bcbd-4166-9fb0-79a223d83eec")
+	)
+	(text_box "Trim R419 for Iz ±100µAmax\nAfter final trimming R415/R2:\nMeasure voltage accross R414\nand calculate R419 =\n15V * R414 / UR414\n= R419set <±1% (incl. Tolerance)\n"
+		(exclude_from_sim no)
+		(at 233.172 132.334 0)
+		(size 28.702 10.922)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "7582f6f9-a64e-425a-b9a5-75348be1a964")
+	)
 	(text_box "R414 = R1(DS): Ultra precision BMF\n= (0.658V-0.0022V/K*Tset)/Iz-7Ω\n9.3mA/59°C: 50Ω\n  4mA/70°C: 120Ω\n(from ADR1000 DS p.7)"
 		(exclude_from_sim no)
-		(at 231.648 122.174 0)
+		(at 231.648 121.412 0)
 		(size 30.226 9.398)
 		(stroke
 			(width 0)
@@ -15330,10 +15980,10 @@
 		)
 		(uuid "89d852d7-0c4a-4da0-8a6f-1a142d388aa2")
 	)
-	(text_box "JFET constant current source:\n4392 & 470R: 3-8mA\nOptional:\ntweak R421 for Iz - 1mA"
+	(text_box "constant I-source:\nI = 3-8mA (R421 = 470R)\nZ = ~100kΩ\n\nOptional:\ntweak R421 for 7..8mA"
 		(exclude_from_sim no)
-		(at 168.402 46.99 0)
-		(size 24.892 7.62)
+		(at 170.18 46.228 0)
+		(size 23.114 10.922)
 		(stroke
 			(width 0)
 			(type default)
@@ -15349,10 +15999,10 @@
 		)
 		(uuid "c21ad653-16b5-48e0-9721-7ee997d54e8a")
 	)
-	(text_box "R415 = R2(DS): Ultra precision BMF\nR2: fine trim (10% max)\nTweak for low (unheated) TC\nof ADR1000 for set oven temp"
+	(text_box "* R415, R2 typical values for low TC\n(unheated) for oven set temperature\nR415 = R2(DS): Ultra precision BMF\nR2: optional fine trim of unheated TC"
 		(exclude_from_sim no)
-		(at 212.09 46.99 0)
-		(size 30.226 7.62)
+		(at 213.868 46.99 0)
+		(size 30.988 7.62)
 		(stroke
 			(width 0)
 			(type default)
@@ -15368,14 +16018,27 @@
 		)
 		(uuid "cf028f7a-8e7f-4b89-a654-9b51b8d6e047")
 	)
-	(text "GND-current\ncompensation\n762µA RN1"
+	(text "Simulation shows instability"
 		(exclude_from_sim no)
-		(at 131.318 124.46 0)
+		(at 199.644 138.43 0)
 		(effects
 			(font
 				(size 0.762 0.762)
+				(thickness 0.0953)
 			)
 			(justify left)
+		)
+		(uuid "11f1855b-9e9c-4e6b-950a-146b9180494d")
+	)
+	(text "GND-current\ncompensation\n770µA RN1"
+		(exclude_from_sim no)
+		(at 139.192 124.714 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(thickness 0.0953)
+			)
+			(justify right)
 		)
 		(uuid "5b0106fa-bcdc-4d98-a5e5-8e8bb4600321")
 	)
@@ -15385,29 +16048,32 @@
 		(effects
 			(font
 				(size 1.016 1.016)
+				(thickness 0.127)
 			)
 		)
 		(uuid "8de80d87-5c91-4dd9-81ea-b2ce6e9d4173")
 	)
-	(text "GND-current\ncompensation\n9.3mA Iz U401"
+	(text "GND-current\ncompensation\n10.5mA Iz U401"
 		(exclude_from_sim no)
-		(at 215.9 134.62 0)
+		(at 224.282 134.874 0)
 		(effects
 			(font
 				(size 0.762 0.762)
+				(thickness 0.0953)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "a1d4ef0f-4655-4ee3-b8cd-e41128b9322a")
 	)
-	(text "GND-current\ncompensation\n680µA Iq U402"
+	(text "GND-current\ncompensation\n680µA Iq U402\n490µA Iq Q1\n100µA Iq Q2"
 		(exclude_from_sim no)
-		(at 256.54 85.09 0)
+		(at 264.922 85.344 0)
 		(effects
 			(font
 				(size 0.762 0.762)
+				(thickness 0.0953)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "fadc7fed-11d2-4671-9821-f89bb9065dde")
 	)
@@ -16217,7 +16883,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "68k"
+		(property "Value" "15K*"
 			(at 207.01 66.04 0)
 			(effects
 				(font
@@ -16235,7 +16901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition03_en.pdf"
+		(property "Datasheet" "https://www.mouser.de/datasheet/2/428/VFCP-3082741.pdf"
 			(at 205.74 64.77 0)
 			(effects
 				(font
@@ -16253,7 +16919,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "3ppm/°C, 30ppm/a LTD - URG"
+		(property "Type" "3ppm/°C, 30ppm/a LTD - VPG VFCP Y163015K (VSMP, FRFC, FRSM, SMR1DZ, leaded 3.81mm: Z201, VHP-series)"
 			(at 205.74 64.77 0)
 			(effects
 				(font
@@ -16374,7 +17040,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22n"
+		(property "Value" "100n"
 			(at 222.25 74.93 0)
 			(effects
 				(font
@@ -16434,6 +17100,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 209.55 54.61 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "06e5453b-b44b-491f-be9f-8f1c956da86c")
+		(property "Reference" "R3"
+			(at 208.28 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 208.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 211.328 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition05_en.pdf&type=application/pdf"
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Metal film (Susumu RR1220P)"
+			(at 209.55 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "492811e6-c7e7-4ccd-80a8-15982c092ca4")
+		)
+		(pin "2"
+			(uuid "a3b1e6d8-718f-4824-9d8d-861149a0908d")
+		)
+		(instances
+			(project "3458A Ref A9 Clone"
+				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_NPN_BCE")
 		(at 124.46 72.39 0)
 		(mirror y)
@@ -16480,6 +17225,15 @@
 			)
 		)
 		(property "Description" "1.5A Ic, 80V Vce, Low Voltage Transistor, TO-126"
+			(at 124.46 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "BD139-16"
 			(at 124.46 72.39 0)
 			(effects
 				(font
@@ -16633,7 +17387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 125.73 0)
 			(effects
 				(font
@@ -16642,7 +17396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 125.73 0)
 			(effects
 				(font
@@ -16893,7 +17647,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "10ppm/°C, 100ppm/a LTD - RG"
+		(property "Type" "10ppm/°C, 100ppm/a LTD - (Susumu RG3216N-6202)"
 			(at 200.66 64.77 0)
 			(effects
 				(font
@@ -16936,7 +17690,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 234.95 92.71 0)
 			(effects
 				(font
@@ -17003,7 +17757,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1feab54b-b96b-424d-b9f0-644b528c58b8")
 		(property "Reference" "C5"
 			(at 214.63 123.19 0)
@@ -17014,7 +17768,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "1n"
 			(at 214.63 125.73 0)
 			(effects
 				(font
@@ -17463,7 +18217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 130.81 0)
 			(effects
 				(font
@@ -17472,7 +18226,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 130.81 0)
 			(effects
 				(font
@@ -17759,6 +18513,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Opamp_Dual_1")
 		(lib_id "Device:Opamp_Dual")
 		(at 165.1 72.39 0)
 		(mirror y)
@@ -18190,7 +18945,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k6"
+		(property "Value" "1k43"
 			(at 227.33 135.89 0)
 			(effects
 				(font
@@ -18297,7 +19052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 120.65 0)
 			(effects
 				(font
@@ -18306,7 +19061,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 120.65 0)
 			(effects
 				(font
@@ -18390,7 +19145,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "11k8"
 			(at 267.97 86.36 0)
 			(effects
 				(font
@@ -19067,7 +19822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 105.41 0)
 			(effects
 				(font
@@ -19076,7 +19831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 105.41 0)
 			(effects
 				(font
@@ -19443,7 +20198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -19452,7 +20207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 135.89 0)
 			(effects
 				(font
@@ -19603,7 +20358,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "10n"
 			(at 222.25 93.98 0)
 			(effects
 				(font
@@ -19863,7 +20618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 100.33 0)
 			(effects
 				(font
@@ -19872,7 +20627,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 100.33 0)
 			(effects
 				(font
@@ -19945,7 +20700,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "b0ea2b47-1feb-4657-b622-b76902420630")
 		(property "Reference" "C1"
 			(at 162.56 76.2 90)
@@ -19955,7 +20710,7 @@
 				)
 			)
 		)
-		(property "Value" "10n"
+		(property "Value" "1n"
 			(at 162.56 81.28 90)
 			(effects
 				(font
@@ -20313,7 +21068,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680k"
+		(property "Value" "68k*"
 			(at 217.17 66.04 0)
 			(effects
 				(font
@@ -20331,7 +21086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition01_en.pdf"
+		(property "Datasheet" "https://www.susumu.co.jp/common/pdf/n_catalog_partition03_en.pdf"
 			(at 215.9 64.77 0)
 			(effects
 				(font
@@ -20349,7 +21104,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "30ppm/°C, 300ppm/a LTD - RG"
+		(property "Type" "10ppm/°C, 100ppm/a LTD - (Susumu URG e.g. URG3216L-683)"
 			(at 215.9 64.77 0)
 			(effects
 				(font
@@ -20453,6 +21208,7 @@
 		)
 	)
 	(symbol
+		(lib_name "Opamp_Dual_2")
 		(lib_id "Device:Opamp_Dual")
 		(at 265.43 71.12 0)
 		(mirror y)
@@ -20463,21 +21219,19 @@
 		(dnp no)
 		(uuid "d2477d40-588a-4939-bb27-7e93afa8787b")
 		(property "Reference" "U402"
-			(at 266.7 69.8499 0)
+			(at 263.144 69.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "LT1013"
-			(at 266.7 72.3899 0)
+			(at 263.144 73.406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
@@ -20655,6 +21409,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 229.87 69.85 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd0c396f-0dce-4415-9b9c-ec7cf8351691")
+		(property "Reference" "R7"
+			(at 231.14 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 231.14 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 229.87 68.072 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.susumu.co.jp/dl/?filename=n_catalog_partition05_en.pdf&type=application/pdf"
+			(at 229.87 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 229.87 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Metal film (Susumu RR1220P)"
+			(at 229.87 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c07e2468-f05e-45e4-8044-d03b8976a959")
+		)
+		(pin "2"
+			(uuid "0fb9e0f7-66e0-424c-9966-c6bddb71304e")
+		)
+		(instances
+			(project "3458A Ref A9 Clone"
+				(path "/257564a5-d2fe-4352-980a-a9579ebbc162"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDA")
 		(at 144.78 132.08 0)
 		(mirror y)
@@ -20770,6 +21603,15 @@
 			)
 		)
 		(property "Description" "25mA min, 30V, 60mOhm max, 2-5V Vgs(off), N-Channel JFET, SOT-23"
+			(at 203.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" ""
 			(at 203.2 43.18 0)
 			(effects
 				(font
@@ -20934,7 +21776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 110.49 0)
 			(effects
 				(font
@@ -20943,7 +21785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 110.49 0)
 			(effects
 				(font
@@ -21056,7 +21898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "TDP-1603 - 8x Thin Film Resistor, Through-Hole Network"
+		(property "Description" "NOMCT1603 - 8x Thin Film Resistor, SMD Network"
 			(at 157.48 115.57 0)
 			(effects
 				(font
@@ -21065,7 +21907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Type" "TDP1603"
+		(property "Type" "NOMCT16032001"
 			(at 157.48 115.57 0)
 			(effects
 				(font
